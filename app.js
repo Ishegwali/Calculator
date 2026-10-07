@@ -18,23 +18,20 @@
     "KRW", "NOK", "DKK", "PLN", "CZK", "TRY", "RUB", "AED",
     "SAR", "THB", "IDR", "MYR", "PHP", "VND", "ILS", "EGP",
     "NGN", "KES", "GHS", "PKR", "BDT", "LKR", "UAH", "HUF",
-    "RON", "BGN", "HRK", "ISK", "CLP", "COP", "PEN", "ARS"
+    "RON", "BGN", "ISK", "CLP", "COP", "PEN", "ARS"
   ];
 
   // USD-based approximation used only when every network source fails.
+  // Keys must stay in sync with CURRENCIES (see README).
   const OFFLINE_RATES = {
     USD: 1, EUR: 0.92, GBP: 0.78, JPY: 155, CNY: 7.25, AUD: 1.52,
     CAD: 1.37, CHF: 0.88, INR: 88, MXN: 19.5, BRL: 5.4, ZAR: 18.5,
     SEK: 10.5, NZD: 1.66, SGD: 1.33, HKD: 7.78, KRW: 1450, NOK: 11.2,
-    PLN: 4.1, CZK: 23.5, TRY: 42, AED: 3.67, SAR: 3.75, THB: 36,
-    IDR: 16500, MYR: 4.4, PHP: 58, VND: 26000, ILS: 3.6, EGP: 50,
-    NGN: 1550, KES: 129, GHS: 15.5, PKR: 285, BDT: 122, LKR: 300,
-    UAH: 42, HUF: 380, RON: 4.55, BGN: 1.8, ISK: 135, CLP: 960,
-    COP: 4200, PEN: 3.8, ARS: 1450, DKK: 6.9, BHD: 0.376,
-    JOD: 0.709, KWD: 0.306, QAR: 3.64, OMR: 0.385, TND: 3.1,
-    DZD: 133, MAD: 10.1, XOF: 605, XAF: 605, CDF: 2850, ETB: 138,
-    TZS: 2650, UGX: 3650, RWF: 1440, ZMW: 28, MWK: 1750, MZN: 64,
-    AOA: 920, BWP: 13.5, NAD: 18.5, SCR: 14.5, MUR: 46
+    DKK: 6.9, PLN: 4.1, CZK: 23.5, TRY: 42, RUB: 85, AED: 3.67,
+    SAR: 3.75, THB: 36, IDR: 16500, MYR: 4.4, PHP: 58, VND: 26000,
+    ILS: 3.6, EGP: 50, NGN: 1550, KES: 129, GHS: 15.5, PKR: 285,
+    BDT: 122, LKR: 300, UAH: 42, HUF: 380, RON: 4.55, BGN: 1.8,
+    ISK: 135, CLP: 960, COP: 4200, PEN: 3.8, ARS: 1450
   };
 
   const SOURCES = [
